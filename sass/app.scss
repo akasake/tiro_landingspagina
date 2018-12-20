@@ -1,0 +1,43 @@
+//theme
+@import 'normalise';
+@import 'variables';
+
+// components
+@import 'components/fontstyles';
+@import 'components/buttons';
+@import 'components/hamburger';
+
+// partials
+@import 'partials/navigation';
+@import 'partials/header';
+@import 'partials/about';
+@import 'partials/features';
+
+
+body{
+    overflow-x: hidden;
+}
+section{
+    padding: 2em 0;
+}
+.hidden{
+    visibility: hidden;
+    height: 0;
+    opacity: 0;
+}
+@media (min-width: $mobile ) {
+    .container{
+        margin: 0 3em;
+    }
+
+}
+@media (min-width: $horizontal ) {
+    .container{
+        margin: 0 10%;
+    }
+}
+@media (min-width: $laptop ) {
+    .container{
+        margin: 0 20%;
+    }
+}

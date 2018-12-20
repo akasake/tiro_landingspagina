@@ -1,0 +1,30 @@
+body{
+    font-family: 'Rubik', sans-serif;
+    font-size: $moNormal;
+    color: $fntGrey;
+}
+h1{
+    font-size: $moHeader;
+}
+h2{
+    font-size: $moTitle;
+}
+h3{
+    font-size: $moSubtitle;
+}
+
+@media (min-width: $horizontal ) {
+    body{
+        font-size: $normal;
+    }
+    h1{
+        font-size: $header;
+    }
+    h2{
+        font-size: $title;
+    }
+    h3{
+        font-size: $subtitle;
+    }
+    
+}
