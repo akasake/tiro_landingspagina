@@ -5,7 +5,7 @@
 // components
 @import 'components/fontstyles';
 @import 'components/buttons';
-@import 'components/hamburger';
+@import 'components/backgrounds';
 
 // partials
 @import 'partials/navigation';
@@ -19,6 +19,13 @@ body{
 }
 section{
     padding: 2em 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+.textbox{
+    max-width: 350px;
 }
 .hidden{
     visibility: hidden;
@@ -28,6 +35,9 @@ section{
 @media (min-width: $mobile ) {
     .container{
         margin: 0 3em;
+    }
+    section{
+        flex-direction: row;
     }
 
 }

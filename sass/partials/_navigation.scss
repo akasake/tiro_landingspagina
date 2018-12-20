@@ -1,1 +1,46 @@
+nav{
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    padding: 10px;
+}
+nav ul{
+    list-style-type: none;  
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
 
+nav a{
+    font-weight: 600;
+    font-style: normal;
+    font-size: $moSubtitle;
+    text-decoration: none;
+    color: $black; 
+    padding: 0.2em 0.6em;
+    margin: 0 0.4em;
+    font-family: 'raleway', sans-serif;
+    
+}
+nav li{
+    margin: 0.5em;
+}
+nav a:hover{
+    border-bottom: 2px solid $yellow;
+}
+
+.logo--icon{
+    margin-right: auto;
+    width: 100px;
+    margin-left: 1em;
+    align-self: flex-start;
+    width: 50px
+}

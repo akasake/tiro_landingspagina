@@ -1,0 +1,42 @@
+header{
+    height: 100vh;
+}
+.imgContainer img{
+    width: 100%
+}
+.imgContainer{
+    max-width: 500px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    height: 80vh;
+}
+.main div{
+    width: 50%;
+    min-width: 360px;
+}
+.textbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.textbox h1, a{
+    text-align: center;
+    display: inline-block
+}
+.textbox a{
+    max-width: 200px;
+}
+
+@media (min-width: $tablet ) {
+    .main div{
+        width: 40%;
+    }
+    .textbox{
+        align-items: flex-start
+    }
+    .textbox h1{
+        text-align: left
+    }
+}
