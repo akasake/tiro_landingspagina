@@ -19,13 +19,33 @@ body{
 }
 section{
     padding: 2em 0;
+    max-width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
 
 }
+.container{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+header .container{
+    width: initial;
+    height: initial;
+}
+.main{
+    width: 100%;
+    height: 100%;
+}
 .textbox{
     max-width: 350px;
+}
+.stores{
+    min-width: 200px;
+}
+.deco{
+    min-height: 50vh;
 }
 .hidden{
     visibility: hidden;
@@ -33,21 +53,56 @@ section{
     opacity: 0;
 }
 @media (min-width: $mobile ) {
-    .container{
-        margin: 0 3em;
-    }
     section{
         flex-direction: row;
+        justify-content: center;
     }
-
+    .container{
+        margin: 0 3em;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+    }
+   
+    .bgLeft .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
 @media (min-width: $horizontal ) {
     .container{
-        margin: 0 10%;
+        margin: 0 5%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .bgLeft .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header .container{
+        display: block;
+    }
+    .main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .textbox{
+        box-sizing: border-box;
+        display: inline-block;
+        align-self: flex-start;
+    }
+    .deco, .imgContainer{
+        box-sizing: border-box;
+        width: 50vw;
+        align-self: center;
     }
 }
 @media (min-width: $laptop ) {
     .container{
-        margin: 0 20%;
+        margin: 0 10%;
+    }
+    .textbox{
+        margin-right: 10%;
     }
 }

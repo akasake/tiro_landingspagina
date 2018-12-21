@@ -28,6 +28,30 @@ header{
 .textbox a{
     max-width: 200px;
 }
+.imgContainer{
+    position: relative;
+}
+.main .lightPhone{
+    display: inline-block;
+    position: absolute;
+    right: 20%;
+    bottom: 35%;
+    opacity: 0;
+    background-color: $yellow;
+    border: 1px solid $yellow;
+    border-radius: 100%;
+    min-width: 0px;
+    width: 50px;
+    height: 50px;
+    animation: light 1.5s ease-out 0s infinite alternate;
+}
+
+@keyframes light{
+   0%{opacity: 0.8; transform: scale(0.8);}
+   100%{opacity: 0.7; transform: scale(1.2);}
+}
+
+
 
 @media (min-width: $tablet ) {
     .main div{
