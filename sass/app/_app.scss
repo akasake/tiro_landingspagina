@@ -1,0 +1,18 @@
+.app{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.appContainer{
+    width: 400px;
+    height: 700px;
+    background-color: antiquewhite;
+    margin-top: 1em;
+}
+video{
+    background-size: cover;
+    overflow: hidden;
+    padding: -50px
+}
