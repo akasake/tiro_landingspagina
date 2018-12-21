@@ -15,9 +15,14 @@ if (video){
     }
         setTimeout(
           function() {
-            document.getElementById('div1').style.display='none';
-            document.getElementById('div2').style.display='none';
-          }, 100);
+            $(".beforeclue").toggleClass("hidden");
+          }, 5000);
 
-    
+          $(".clue").click(function(e){
+            e.preventDefault();
+
+            $(".beforeclue").toggleClass("hidden");
+            $(".afterclue").toggleClass("hidden");
+
+        });
 }
