@@ -12,11 +12,12 @@
 @import 'partials/header';
 @import 'partials/about';
 @import 'partials/features';
-@import 'partials/messages';
+
 
 // app
 @import 'app/homepage';
 @import 'app/app';
+@import 'app/messages';
 
 
 body{

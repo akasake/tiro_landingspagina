@@ -1,0 +1,70 @@
+.message-header{
+    display: flex;
+    align-content: center;
+    height: 10%;
+    border-bottom: 2px solid black;
+    align-content: center;
+}
+
+.face{
+    margin-top: 2%;
+    width: 15%;
+    height: 75%;
+}
+
+.sender-name{
+    display: inline-block;
+    font-size: $subtitle;
+}
+
+.message-box{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.message{
+    font-size: 0.7em;
+    flex-basis: 10%;
+    width: 60%;
+    text-align: left;
+    padding: 1%;
+}
+
+.message-detective{
+    background-color: $yellow;
+    align-self: flex-start;
+    margin-left: 3%;
+}
+
+.message-player{
+    background-color: $blue;
+    align-self: flex-end;
+    margin-right: 3%;
+}
+
+.message-balk{
+    height: 5%;
+}
+
+.send-message{
+    display: inline-block;
+    border: 1px solid black;
+    background-color: #fff;
+    width: 50%;
+    margin: auto 0;
+}
+
+.btn-send{
+    display: inline-block;
+    border: 2px solid black;
+    background-color: grey;
+    margin-left: 2%;
+}
+
+
+
+
+
+
+
