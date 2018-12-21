@@ -2,5 +2,12 @@
     border-radius: $radSmall;
     text-decoration: none;
     padding: 0.4em 1em;
-    background-color: $yellow;
+    background: linear-gradient(to right, orange 0%, orange 50%, $yellow 50%, $yellow 100%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+    transition: background-position .3s;
+}
+
+.button:hover{
+    background-position: 0 0;
 }
